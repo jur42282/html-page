@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Login</title>
+</head>
+<body>
+    <nav>
+        <ul class="sidebar">
+            <li onclick="hideSidebar()"><a href="#"><i class="material-symbols-outlined">close</i></a></li>
+            <!-- <li><a href="#">LJ</a></li> -->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Forum</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+        <ul>
+            <li><a href="#"><LJ></a></li>
+            <li class="hideOnMobile"><a href="index.html">Menu</a></li>
+            <li class="hideOnMobile"><a href="#">Products</a></li>
+            <li class="hideOnMobile"><a href="#">About</a></li>
+            <li class="hideOnMobile"><a href="#">Forum</a></li>
+            <li class="hideOnMobile"><a href="login.html">Login</a></li>
+            <li class="menu-button" onclick="showSidebar()"><a href="#"><i class="material-symbols-outlined">menu</i></a></li>
+        </ul>
+
+    </nav>
+    <section class="login">
+        <h1>Login</h1>
+        <form>
+            <h4 class="email">Enter your Email:</h4>
+            <input type="email" Enter your email="Email" class="email">
+            <h4 class="password">Enter your Password:</h4>
+            <input type="password" Enter your password="Password" class="password" id="password">
+            <p class="p-toggle" id="togglePassword"><i class="material-symbols-outlined">visibility</i></p>
+            <input type="submit" value="Login" class="submit">
+            <p id="log-opt">Or continue with</p>
+            <div class="socials">
+                <input type="image" src="google-site.png" alt="Login with Google" class="google">
+                <input type="image" src="microsoft-site.png" alt="Login with Microsoft" class="microsoft">
+                <input type="image" src="apple-site.png" alt="Login with Apple" class="apple">
+            </div>
+            <section class="acc-options">
+                <p class="forgot">Forgot your password? <a href="forgot.html">Reset it here.</a></p>
+                <p class="register">Don't have an account? <a href="register.html">Create one here.</a></p>
+            </section>
+        </form>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
